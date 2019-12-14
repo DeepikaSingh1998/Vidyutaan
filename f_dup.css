@@ -1,0 +1,271 @@
+body,
+.whole {
+    margin: 0%;
+    padding: 0%
+}
+
+body:before,
+.whole {
+    content: '';
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /*-webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    filter: blur(2px);*/
+}
+
+.hnav h1 {
+    margin-left: 100px;
+    font-family: "Comic Sans Ms";
+    color: #fea715;
+}
+
+.hnav {
+    background-color: #f2f2f2;
+    margin: 0%;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    height: 100px;
+    top: 0%
+}
+
+.blur {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.whole #sidemenu {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    width: 200px;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(173, 173, 133, 0.2);
+    /*o-transformm:translate3d(-200px,0,0);
+	transition:transform 10s ease;*/
+    transition: left 0.9s linear;
+    left: -200px;
+}
+
+
+/*.welcmcls{
+	width:900px;
+	height:100%;
+	background-color: rgba(173, 173, 133, 0.2);
+	margin-left:50px;
+	position:absolute;
+}*/
+
+.whole #sidemenu.visible {
+    left: 0px;
+    transition: left 0.9s linear;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    background: #000;
+    color: #ccc;
+    font-family: "Comic Sans Ms";
+    border-bottom: 1px solid rgba(173, 173, 133, 0.2);
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.whole #sidebar_btn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    margin: 20px;
+    position: absolute;
+    top: 0px;
+    right: -60px;
+}
+
+.whole #sidebar_btn span {
+    height: 1px;
+    margin-bottom: 5px;
+    display: block;
+    background-color: #FFDF00;
+}
+
+.content {
+    position: absolute;
+    right: 0%;
+    font-family: "Comic Sans Ms";
+    color: #fea715;
+    top: 10px;
+}
+
+.content .meter {
+    width: 80px;
+    padding: 10px;
+    align-content: flex-end;
+    margin-right: 10px;
+    height: 80px;
+    display: inline-block;
+    background-image: url('em1.jpg');
+    background-size: cover;
+}
+
+.whole .content .meter:hover {
+    box-shadow: 9px 9px 20px 7px #FFDF00;
+    color: #FFDF00;
+    border: 2px solid #FFDF00;
+}
+
+.content .pay {
+    width: 55px;
+    display: inline-block;
+    height: 80px;
+    padding: 10px;
+    right: 0%;
+    background-image: url('bank.jpg');
+    background-size: cover;
+}
+
+.whole .content .pay:hover {
+    box-shadow: 9px 9px 20px 7px #FFDF00;
+    color: #FFDF00;
+    padding: 10px;
+    border: 2px solid #FFDF00;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    max-height: 600px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.text1 {
+    color: #000;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 0;
+}
+
+#back {
+    margin-right: 10px;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}

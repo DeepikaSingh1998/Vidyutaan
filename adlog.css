@@ -1,0 +1,83 @@
+body,
+.whole {
+    margin: 0%;
+    padding: 0%;
+}
+
+.body::before,
+.whole {
+    background-image: url("alog.jpg");
+    content: '';
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Comic Sans Ms";
+}
+
+.whole #sidemenu {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    width: 200px;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(173, 173, 133, 0.2);
+    /*o-transformm:translate3d(-200px,0,0);
+	transition:transform 10s ease;*/
+    transition: left 0.9s linear;
+    left: -200px;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.whole #sidemenu.visible {
+    left: 0px;
+    transition: left 0.9s linear;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    background: #000;
+    color: #ccc;
+    font-family: "Comic Sans Ms";
+    border-bottom: 1px solid rgba(173, 173, 133, 0.2);
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.whole #sidebar_btn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    margin: 20px;
+    position: absolute;
+    top: 0px;
+    right: -60px;
+}
+
+.whole #sidebar_btn span {
+    height: 1px;
+    margin-bottom: 5px;
+    display: block;
+    background-color: #fff;
+}

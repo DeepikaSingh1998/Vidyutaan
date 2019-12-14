@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin_dshbrd.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="admin_dshbord.js"></script>
+</head>
+
+<body>
+    <div class="whole">
+        <button id="reg_btn" onclick="reg()">Register</button>
+        <a href="#back"><img src="back2.png" id="back">
+        </a>
+        <div id="Registerid" class="RegisterClass">
+            <form action="ad_insert.php" method="POST">
+                <p>Name</p>
+                <input type="text" name="ad_name" placeholder="Name">
+                <input type="submit" name="submit" placeholder="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

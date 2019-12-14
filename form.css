@@ -1,0 +1,295 @@
+body,
+.whole {
+    margin: 0%;
+    padding: 0%
+}
+
+body:before,
+.whole {
+    content: '';
+    position: fixed;
+    background-image: url("bg1.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /*-webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    filter: blur(2px);*/
+}
+
+.blur {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.form {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 60px;
+    background-color: rgba(173, 173, 133, 0.2);
+    padding: 0px 10px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#create {
+    height: 533px;
+    width: 600px;
+}
+
+#Login {
+    height: 400px;
+    width: 400px;
+}
+
+.Avatar,
+.Avatar_log {
+    display: inline-block;
+    margin: -80px auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.Avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+}
+
+.Avatar_log {
+    width: 150px;
+    height: 150px;
+    border-radius: 300px;
+}
+
+.form h2 {
+    text-align: center;
+    font-family: "Comic Sans MS";
+    color: #fff;
+    margin-bottom: -1px;
+    margin-top: -1px;
+}
+
+.form p,
+label {
+    font-size: 18px;
+    font-family: "Comic Sans MS";
+    color: #fff;
+    margin-bottom: -1px;
+    margin-top: -1px;
+}
+
+.form input {
+    font-family: monospace;
+    width: 100%;
+}
+
+.form .names input[type="text"] {
+    display: inline;
+    height: 20px;
+    font-size: 15px;
+    margin-right: 20px;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    color: yellow;
+}
+
+#Login input[type="text"] {
+    font-size: 15px;
+    background: transparent;
+    color: #f4f471;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.form input[type="email"],
+.form input[type="tel"],
+.form input[type="password"] {
+    height: 20px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    color: #f4f471;
+    margin-bottom: 20px;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+}
+
+.form input[type="submit"] {
+    font-size: 25px;
+    font-family: "Comic Sans MS";
+    text-align: center;
+    position: absolute;
+    background-color: rgba(230, 0, 0);
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    display: block
+}
+
+#create input[type="submit"] {
+    width: 400px;
+    margin-left: 100px;
+}
+
+#Login input[type="submit"] {
+    width: 350px;
+    margin-left: 27px;
+}
+
+
+/*.form .close {
+    top: 1px;
+    display: inline;
+    right: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+}*/
+
+.whole #sidemenu {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 200px;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(173, 173, 133, 0.2);
+    /*o-transformm:translate3d(-200px,0,0);
+	transition:transform 10s ease;*/
+    transition: left 0.9s linear;
+    left: -200px;
+}
+
+
+/*.welcmcls{
+	width:900px;
+	height:100%;
+	background-color: rgba(173, 173, 133, 0.2);
+	margin-left:50px;
+	position:absolute;
+}*/
+
+.whole #sidemenu.visible {
+    left: 0px;
+    transition: left 0.9s linear;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    background: #000;
+    color: #ccc;
+    font-family: "Comic Sans Ms";
+    border-bottom: 1px solid rgba(173, 173, 133, 0.2);
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.whole #sidebar_btn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    margin: 20px;
+    position: absolute;
+    top: 0px;
+    right: -60px;
+}
+
+.whole #sidebar_btn span {
+    height: 1px;
+    margin-bottom: 5px;
+    display: block;
+    background-color: #FFDF00;
+}
+
+.content .welcm {
+    width: 800px;
+    height: 800px;
+    margin-top: 200px;
+    margin-left: 80px;
+    color: #fea715;
+    font-family: "Comic Sans Ms";
+}
+
+.whole .content .welcm h1 {
+    left: 50%;
+    top: 50%;
+    margin-left: 100px;
+}
+
+.whole .content button {
+    font-family: "Comic Sans Ms";
+    height: 25px;
+    position: absolute;
+    margin-top: 20px;
+    top: 0;
+    right: 0;
+    text-align: center;
+    color: #fea715;
+    text-decoration: none;
+    border: 2px solid #fea715;
+    display: inline-block;
+    background: transparent;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.whole .content .button1 {
+    margin-right: 20px;
+}
+
+.whole .content .button2 {
+    margin-right: 120px;
+}
+
+.whole .content .button1:hover {
+    box-shadow: 9px 9px 20px 7px #FFDF00;
+    color: #FFDF00;
+    border: 2px solid #FFDF00;
+}
+
+.whole .content .button2:hover {
+    box-shadow: 9px 9px 20px 7px #FFDF00;
+    color: #FFDF00;
+    border: 2px solid #FFDF00;
+}
+
+
+/*p{
+	color:#000;
+	background:transparent;
+	top:40px;
+}*/
+
+.whole .content .slide_anime .mySlides {
+    display: block;
+}

@@ -1,0 +1,104 @@
+.whole {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("paydet.jpg");
+    background-size: cover;
+    position: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*-webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    filter: blur(1px);*/
+}
+
+.form {
+    height: 533px;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 60px;
+    font-family: "Comic Sans Ms";
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0px 10px;
+    border-radius: 20px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.form input {
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid red;
+    width: 100%;
+}
+
+.form p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.form h2 {
+    text-align: center;
+    font-family: "Comic Sans MS";
+    color: #fff;
+    margin-bottom: -1px;
+}
+
+.form input[type="text"] {
+    margin-right: 10px;
+    margin-top: -5px;
+    font-family: "Comic Sans MS";
+    color: #fff;
+}
+
+.form input[type="submit"] {
+    background: red;
+    color: #000;
+    border-radius: 15px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: "Comic Sans Ms";
+    height: 35px;
+    width: 400px;
+    text-align: center;
+    margin-left: 100px;
+    border: none;
+}
+
+
+/*
+.close-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #444;
+    position: absolute;
+    right: -15pxtop -15px;
+    background: #fff;
+}
+
+.close-button>div {
+    width: 24px;
+    height: 24px;
+    background: #000;
+    position: absolute;
+    left: 3px;
+    top: 13px;
+}
+
+.close-button>div:first-child {
+    -webkit-transform: translate(50%) rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(rotate(45deg));
+}
+
+.close-button>div:last-child {
+    -webkit-transform: rotate(-45deg);
+}*/

@@ -1,0 +1,54 @@
+body,
+.whole {
+    margin: 0%;
+    padding: 0%
+}
+
+body:before,
+.whole {
+    content: '';
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(102, 179, 255)
+    /*-webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    filter: blur(2px);*/
+}
+
+.content {
+    margin-left: 80px;
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 100%;
+    width: 1200px;
+    margin-top: 80px;
+    border: none;
+}
+
+table {
+    border-collapse: collapsed;
+    width: 1200px;
+    color: #000;
+    font-family: "Comic Sans Ms";
+    font-size: 20px;
+    text-align: left;
+}
+
+th {
+    background-color: #0080ff;
+    color: #000;
+    padding: 5px;
+}
+
+tr {
+    font-size: 15px;
+}
+
+tr:hover {
+    background-color: rgb(102, 204, 255);
+}
+
+
+/*tr:nth-child(even) {
+    background-color: #f2f2f2;
+}*/

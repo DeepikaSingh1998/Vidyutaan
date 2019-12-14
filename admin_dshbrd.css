@@ -1,0 +1,83 @@
+body,
+.whole {
+    margin: 0%;
+    padding: 0%;
+}
+
+.body::before,
+.whole {
+    background-image: url("bg2.jpg");
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    font-family: "Comic Sans Ms";
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.RegisterClass {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    width: 400px;
+    height: 400px;
+    left: 50%;
+    margin-top: 60px;
+    background-color: rgba(51, 102, 255, 0.2);
+    font-family: "Comic Sans MS";
+    border-radius: 20px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.RegisterClass input {
+    width: 100%;
+}
+
+.RegisterClass input[type="text"] {
+    border: none;
+    outline: none;
+    margin: 10px;
+    background: transparent;
+    border-bottom: 1px solid #000;
+}
+
+.RegisterClass input[type="password"] {
+    border: none;
+    outline: none;
+    margin: 10px;
+    background: transparent;
+    margin-right: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.RegisterClass input[type="submit"] {
+    margin: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    background-color: darkred;
+}
+
+.whole button {
+    background-color: rgba(173, 173, 133, 0.2);
+    border: none;
+    position: fixed;
+    text-decoration: none;
+    right: 20px;
+    top: 10px;
+    color: #fff;
+    height: 30px;
+    width: 100px;
+    font-family: "Comic Sans MS";
+    border-radius: 10px;
+}
+
+#back {
+    bottom: 10px;
+    left: 10px;
+    position: fixed;
+}
